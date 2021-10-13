@@ -24,6 +24,7 @@ class  App extends Component {
       <div>
       <div className="container">
       <h2>React Redux App</h2>
+      <h2>Sample React app</h2>
       <h3>Below data is from redux store</h3>
       <table class="table table-bordered">
                             <thead>
