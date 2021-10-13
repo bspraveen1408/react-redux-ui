@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Login from './components/auth/Login';
 import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 class  App extends Component {
   constructor(props){
@@ -19,6 +21,7 @@ class  App extends Component {
   render(){
     return ( 
       <div>
+        <Header/>
       <Router>
       <div>
         <Switch>
@@ -31,6 +34,7 @@ class  App extends Component {
         </Switch>
       </div>
     </Router>
+    <Footer/>
     </div>
 
 );
