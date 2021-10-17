@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import About from './about'
+import Contacts from './contact';
 class Header extends Component {
     constructor(props) {
         super(props)
@@ -16,6 +17,7 @@ class Header extends Component {
                     WELCOME! HAVE A WONDERFUL TOUR
                 </marquee>
                 <About details='this page is not yet ready'/>
+                <Contacts info='No contacts has been given yet'/>
 
             </div>
         )
