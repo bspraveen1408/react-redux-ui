@@ -36,7 +36,7 @@ export const HeaderComponent = () => {
                         </li>
                         <li>
                             <span>
-                               <span><Person onClick={handleClick}/></span>
+                            <span className="pointer"><Person onClick={handleClick}/></span>
                                 <Popover
                                     id={id}
                                     open={open}
@@ -48,9 +48,9 @@ export const HeaderComponent = () => {
                                     }}
                                 >
                                     <ul className="user-details">
-                                        <li><Settings/>Settings</li>
-                                        <li><Person/>Profile</li>
-                                        <li><Logout/>Log Out</li>
+                                        <li className='pointer'><Settings/>Settings</li>
+                                        <li className='pointer'><Person/>Profile</li>
+                                        <li className='pointer'><Logout/>Log Out</li>
                                     </ul>
                                     
                                 </Popover>
