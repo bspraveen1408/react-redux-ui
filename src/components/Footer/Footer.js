@@ -1,5 +1,7 @@
 
 import React,{Component} from 'react';
+import {Copyright} from '@mui/icons-material/';
+import './footer.css'
 class Footer extends Component {
     constructor(props){
         super(props)
@@ -9,7 +11,7 @@ class Footer extends Component {
       }
     render(){
         return(
-            <div>this is footer component</div>
+            <div className='footer'><Copyright/> All Rights Reserved</div>
         )
     }
 }
