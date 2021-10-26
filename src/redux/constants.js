@@ -1,1 +1,3 @@
 export const USERS_LIST = 'USERS_LIST';
+export const REGISTER_EMPLOYEE ='REGISTER_EMPLOYEE';
+export const GET_EMPLOYEES = 'GET_EMPLOYEES' 
