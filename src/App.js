@@ -17,6 +17,7 @@ import LoginPage from './components/auth/Login';
 import {Signup} from './components/auth/signup/signup';
 import Profile from './components/profile/profile';
 import {NotFoundComponent} from './components/NotFoundComponent/NotFoundComponent';
+import Employees from './components/auth/signup/employees';
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class App extends Component {
               <Route path='/login' component={LoginPage}/>
               <Route path='/signup' component={Signup}/>
               <Route path='/profile' component={Profile}/>
+              <Route path='/employees' component={Employees}/>
               <Route path='/' component={Home} exact/>
               <Route path='/*' component={NotFoundComponent} exact/>
               

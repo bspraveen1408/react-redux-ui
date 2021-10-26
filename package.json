@@ -10,7 +10,7 @@
     "@mui/lab": "^5.0.0-alpha.51",
     "@mui/material": "^5.0.4",
     "@mui/styled-engine-sc": "^5.0.3",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "date-fns": "^2.25.0",
     "history": "^4.10.1",
     "jquery": "^3.6.0",

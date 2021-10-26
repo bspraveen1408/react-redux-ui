@@ -8,6 +8,7 @@ import DesktopDatePicker from '@mui/lab/DesktopDatePicker';
 import Stack from '@mui/material/Stack';
 import { stateList, cityList } from '../../../common/constants'
 import { Email } from '@mui/icons-material';
+import { useHistory } from 'react-router';
 export const Signup = () => {
     // From Material UI for Date pick
     // const [dob, setDob] = useState(new Date(''));
@@ -19,7 +20,7 @@ export const Signup = () => {
     // const [mail, setMail] = useState('');
     // const[pass,setPass]=useState('');
 
-
+const history= useHistory();
 const[userdetails,setUserDetails]=useState(
     {firstName:'',lastName:'',dob:null,sex:'',mail:'',pass:'',city:'',statename:''});
 
@@ -35,10 +36,9 @@ const[userdetails,setUserDetails]=useState(
 
 
     // //Material UI for DOB
-    // const handleChange = (newDob) => {
-    //     setValue(newDob);
-    //     console.log(dob);
-    // };
+    const handleChange = (date) => {
+        setUserDetails({ ...userdetails, dob:date});
+    };
     // const genderHandle = (e) => {
     //     setSex(e.target.value);
     //     console.log(sex);
@@ -75,6 +75,7 @@ const[userdetails,setUserDetails]=useState(
         console.log('Object is', obj);
         console.log('userDetails are ', userdetails);
         console.log(userdetails);
+        history.push('/employees')
     }
 
     return (
@@ -132,7 +133,7 @@ const[userdetails,setUserDetails]=useState(
                                                     inputFormat="MM/dd/yyyy"
                                                     value={userdetails.dob}
                                                     name='dob'
-                                                    onChange={signupHandle}
+                                                    onChange={handleChange}
                                                     // onChange={handleChange}
                                                     renderInput={(params) => <TextField {...params} />}
                                                 />
